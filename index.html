@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    
+    <title>Malaysia Vehicle Registration & Environmental Complaints Map</title>
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Malaysia: Vehicle Impact on Environmental Quality (2019)</h1>
+        <p>Comprehensive analysis of vehicle registration patterns, environmental compliance,</p>
+        <p>and sustainable mobility indicators across Malaysian states.</p>
+    </div>
+
+    <div id="symbol_map"></div>
+
+    <div class="footer">
+        <p><strong>Data Sources:</strong> Ministry of Transport Malaysia, Department of Environment Malaysia</p>
+        <p><strong>Note:</strong> Data from 2019. Circle size represents registered vehicles, color represents complaint numbers.</p>
+    </div>
+
+<script type="text/javascript">
+    var spec2 = "js/symbol_map.vg.json";
+    vegaEmbed('#symbol_map', spec2).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+</script>
+
+</body>
+</html>
