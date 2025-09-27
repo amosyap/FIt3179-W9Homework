@@ -30,7 +30,7 @@
         },
         {
         "data": {
-            "url": "https://raw.githubusercontent.com/amosyap/FIT3179-DV2/refs/heads/main/FIT3179%20-%20W9_Homework/data/DV2_Dataset.csv"
+            "url": "https://raw.githubusercontent.com/amosyap/FIt3179-W9Homework/refs/heads/main/DV2_Dataset.csv"
         },
         "mark": {
             "type": "circle",
